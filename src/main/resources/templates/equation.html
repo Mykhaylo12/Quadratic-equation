@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+    <title>Registration</title>
+</head>
+<body>
+<div layout:fragment="content" class="container mySpace">
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h4>Fill up the form for equation ax^2 + bx + c = 0</h4>
+            <form action="/equation"  method="post">
+                <input name="a" type="number" placeholder="a">
+                <input name="b" type="number" placeholder="b">
+                <input name="c" type="number" placeholder="c">
+                <button class="btn-group-sm" type="submit">Submit</button>
+            </form>
+
+            <a href="/logout" class="btn btn-lg btn-block">Logout</a></td>
+        </div>
+    </div>
+</div>
+</body>

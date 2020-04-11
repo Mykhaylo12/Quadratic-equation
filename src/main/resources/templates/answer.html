@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <title>Answer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+</head>
+<p class="lead">
+    Answer for ax^2 + bx + c = 0
+</p>
+<body>
+<div layout:fragment="content" class="container mySpace">
+    <div class="card">
+        <div class="card card-body">
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>roots</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <td th:text="${equation.getA()}"></td>
+                    <td th:text="${equation.getB()}"></td>
+                    <td th:text="${equation.getC()}"></td>
+                    <td th:text="${equation.getAnswer()}"></td>
+                </tr>
+                </tbody>
+                <td><a href="/list" class="btn btn-dark">To list</a></td>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
