@@ -39,6 +39,7 @@ Available functions for all user:
 Open the project in your IDE.
 Add sdk 11.0.3 in project structure.
 Set yours appropriate properties in application.properties file.
+http://localhost:8081/login
 Run the project.
  
 In this app we have already created two users. 
