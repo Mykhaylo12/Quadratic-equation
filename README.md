@@ -37,13 +37,13 @@ Available functions for all user:
 
 ## <a name="developer-start"></a>For developer
 Open the project in your IDE.
-
 Add sdk 11.0.3 in project structure.
-
 Set yours appropriate properties in application.properties file.
-
 Run the project.
  
+In this app we have already created two users. 
+1) username: "user", password:"1", role:"USER";
+2) username: "admin", password:"1", role:"ADMIN";
 <hr>
 
 ## <a name="authors"></a>Authors
